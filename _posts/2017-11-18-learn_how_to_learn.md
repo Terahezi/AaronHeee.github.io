@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Coursera LHL 学习总结"
+title: "Coursera LHL 总结"
 author: "Aaron He"
 tags: 
   - Life in NUS

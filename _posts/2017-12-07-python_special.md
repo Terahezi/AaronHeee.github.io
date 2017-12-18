@@ -1,14 +1,11 @@
 ---
 layout: post
-
-title: "Python特殊语法集锦"
-
 author: "Aaron He"
-
 tags: 
-
 -Machine Learning
 ---
+
+# Python特殊语法集锦
 
 
 

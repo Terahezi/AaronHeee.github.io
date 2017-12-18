@@ -138,3 +138,67 @@ True
 [1, 2, [3333, 4]] # e中内部元素[]列表的值不会因为a中的值改变而改变
 ```
 
+
+
+###装饰器
+
+在不修改函数定义的情况下，代码运行期间动态增加功能的方式称为**装饰器**(Decorator)，其本质是一个可以返回函数的高阶函数。
+
+**无参数传入例子：**
+
+```python
+def log(func):
+    def wrapper(*args, **kw):
+        print 'call %s():' % func.__name__
+        return func(*args, **kw)
+    return wrapper
+
+@log  # 相当于 now = log(now)
+def now():
+    print '2013-12-25'
+    
+# >>> now()
+# call now():
+# 2013-12-25
+```
+
+**有参数传入例子：**
+
+```python
+def log(text):
+    def decorator(func):
+        def wrapper(*args, **kw):
+            print '%s %s():' % (text, func.__name__)
+            return func(*args, **kw)
+        return wrapper
+    return decorator
+
+@log('execute')
+def now():
+    print '2013-12-25'
+```
+
+**注意事项：**
+
+装饰器会改变 `func.__name__` 的值，若要维持原值，不能通过 `wrapper.__name__ = func.__name__` 而是需要 `functools.wraps` 装饰器。
+
+```python
+import functools
+
+def log(func):
+    @functools.wraps(func)   # 保持__name__为原值
+    def wrapper(*args, **kw):
+        print 'call %s():' % func.__name__
+        return func(*args, **kw)
+    return wrapper
+```
+
+
+
+
+
+> 参考资料：
+>
+> https://morvanzhou.github.io/tutorials/python-basic/
+>
+> https://www.liaoxuefeng.com/wiki/

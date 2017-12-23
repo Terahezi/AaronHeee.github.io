@@ -23,9 +23,48 @@ tags:
 
 # 工厂方法
 
+实例：
+
+首先使用 `@property` 来修饰产品函数
+
+```python
+Class JSONConnector:
+    def __init__(self, filepath):
+        self.data = dict()
+        with open(filepath, mode='r', encoding='utf-8') as f:
+            self.data = json.load(f)
+            @property
+            def parsed_data(self):
+                return self.data
+```
+
+```python
+Class XMLConnector:
+    def __init__(self, filepath):
+        self.tree = etree.parse(filepath)
+        @property
+        def parsed_data(self):
+            return self.tree
+```
+
+再用工厂方法调用：
+
+```python
+def connection_factory(filepath):
+    if filepath.endwith('json'):
+        connector = JSONConnector
+        elif filepath.endwith('xml'):
+            connector = XMLConnector
+            else:
+                raise ValueError('Cannot connect to {}'.format(filepaht))
+                return connector(filepath)
+```
+
 
 
 # 抽象工厂
+
+**抽象工厂**设计模式是工厂模式的归纳。基本上，抽象工厂是一组 (逻辑上的) 工厂方法，这里每个工厂模式都负责生成一种不同的对象。
 
 
 

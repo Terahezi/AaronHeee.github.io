@@ -1,13 +1,10 @@
 ---
 layout: post
 author: "Aaron He"
+title: "Python特殊语法集锦"
 tags: 
 -Machine Learning
 ---
-
-# Python特殊语法集锦
-
-
 
 ### 三目运算 / 行内表达式
 

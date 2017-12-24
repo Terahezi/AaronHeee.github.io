@@ -28,11 +28,11 @@ author: "Aaron He"
 
 流程：训练集 —> 测试集
 
-> Dataset类方法：[PyTorch 数据集的读取](http://blog.leanote.com/post/braveapple/PyTorch-数据集的读取) 、[莫烦|批训练](https://morvanzhou.github.io/tutorials/machine-learning/torch/3-05-train-on-batch/)
+> Dataset类方法：[PyTorch 数据集的读取](http://blog.leanote.com/post/braveapple/PyTorch-数据集的读取) 、 [莫烦|批训练](https://morvanzhou.github.io/tutorials/machine-learning/torch/3-05-train-on-batch/)
 >
-> Pytorch utils.data 文档： [官方文档](http://pytorch.org/docs/master/data.html) （DataLoader类参数可以仔细阅读）
+> Pytorch utils.data 文档 ：  [官方文档](http://pytorch.org/docs/master/data.html) （DataLoader类参数可以仔细阅读）
 >
-> torchvision.transforms 变换举例： [torchvision.transforms 中文文档](https://pytorch-cn.readthedocs.io/zh/latest/torchvision/torchvision-transform/)
+> torchvision.transforms 变换举例：  [torchvision.transforms 中文文档](https://pytorch-cn.readthedocs.io/zh/latest/torchvision/torchvision-transform/)
 
 ### 3.神经网络：
 
@@ -40,7 +40,7 @@ author: "Aaron He"
 
 流程：定义网络 —> 定义前馈过程
 
-> 自动求导机制简介： [自动求导机制中文文档](https://pytorch-cn.readthedocs.io/zh/latest/notes/autograd/) 、[知乎|自动梯度计算](https://zhuanlan.zhihu.com/p/27147968)
+> 自动求导机制简介： [自动求导机制中文文档](https://pytorch-cn.readthedocs.io/zh/latest/notes/autograd/) 、 [知乎|自动梯度计算](https://zhuanlan.zhihu.com/p/27147968)
 >
 > Autograd.Function类： [自定义Function](https://zhuanlan.zhihu.com/p/27783097)
 
@@ -54,11 +54,11 @@ author: "Aaron He"
 
 流程：模式切换 —> 数据输入 (初始化 / 预训练) —> 梯度重置 —> 损失函数 —> 梯度回馈 —> 参数更新 —> 定期监控
 
-> 预训练：[知乎|PyTorch 预训练](https://zhuanlan.zhihu.com/p/25980324)
+> 预训练： [知乎|PyTorch 预训练](https://zhuanlan.zhihu.com/p/25980324)
 >
-> 保存提取：[莫烦|PyTorch 保存提取](https://morvanzhou.github.io/tutorials/machine-learning/torch/3-04-save-reload/)
+> 保存提取： [莫烦|PyTorch 保存提取](https://morvanzhou.github.io/tutorials/machine-learning/torch/3-04-save-reload/)
 >
-> 官方模型保存：[推荐的模型保存方法](http://pytorch.org/docs/0.3.0/notes/serialization.html#recommend-saving-models)
+> 官方模型保存： [推荐的模型保存方法](http://pytorch.org/docs/0.3.0/notes/serialization.html#recommend-saving-models)
 
 ### 6.测试过程：
 

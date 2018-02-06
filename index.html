@@ -1,32 +1,77 @@
----
-layout: default
-title: Home
----
-
-<div class="catalogue">
-  {% for post in paginator.posts %}
-    <a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item">
-      <div>
-        <time datetime="{{ post.date }}" class="catalogue-time">{{ post.date | date: "%B %d, %Y" }}</time>
-        <h1 class="catalogue-title">{{ post.title }}</h1>
-        <div class="catalogue-line"></div>
-
-        <p>
-          {{ post.content | truncatewords: 30 | strip_html }}
-        </p>
-
-      </div>
-    </a>
-  {% endfor %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zhankui He's Home Page</title>
+    <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet"/>
+    <style type="text/css">
+		ul {margin-top: 16px}
+		img {margin-top: 10%}
+		address {margin-top: 10%}
+	</style>
+</head>
+<body>
+   <div class="container-fluid">
+	<div class="row-fluid">
+		<div class="col-md-3">
+		</div>
+		<div class="col-md-8">
+			<div class="row-fluid">
+				<div class="col-md-3">
+					<h2><strong>Zhankui He</strong></h2>
+					<img src="img/hzk.jpg" width="85%" class="img-rounded" /> 
+					<address><strong>Fudan, Univ.</strong><br /> 220 Handan Road,<br /> Shanghai, 200433<br /> <abbr title="Email">E:</abbr> zkhe15 at fudan.edu.cn<br /> <abbr title="Phone">P:</abbr> (+86) 17717978343</address>
+				</div>
+				<div class="col-md-7">
+					<div class="row-fluid">
+						<div class="col-md-12">
+							<ul class="nav nav-pills" margin-top:20px margin-buttom:10px>
+								<li class="active">
+									<a href="#">HOME</a>
+								</li>
+								<li>
+									<a href="#">RESEARCH</a>
+								</li>
+								<li>
+									<a href="#">PROJECT</a>
+								</li>
+								<li>
+									<a href="#">BLOG</a>
+								</li>
+								
+								<li>
+									<a href="#">CV</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row-fluid">
+						<div class="col-md-12">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-1">
+		</div>
+	</div>
+	<div class="row-fluid">
+		<div class="col-md-2">
+		</div>
+		<div class="col-md-8">
+			<div class="row-fluid">
+				<div class="col-md-3">
+				</div>
+				<div class="col-md-9">
+				</div>
+			</div>
+		</div>
+		<div class="col-md-2">
+		</div>
+	</div>
 </div>
-
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="left arrow">&#8592;</a>
-  {% endif %}
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="right arrow">&#8594;</a>
-  {% endif %}
-
-  <span>{{ paginator.page }}</span>
-</div>
+    <script type="text/javascript" src="lib/jquery.js"></script>
+    <script type="text/javascript" src="css/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

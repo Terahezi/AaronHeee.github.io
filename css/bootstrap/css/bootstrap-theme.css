@@ -49,19 +49,19 @@
 }
 
 .btn-primary {
-  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#81221C), to(#3071a9));
-  background-image: -webkit-linear-gradient(top, #81221C, 0%, #3071a9, 100%);
-  background-image: -moz-linear-gradient(top, #81221C 0%, #3071a9 100%);
-  background-image: linear-gradient(to bottom, #81221C 0%, #3071a9 100%);
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#81221C), to(#800000));
+  background-image: -webkit-linear-gradient(top, #81221C, 0%, #800000, 100%);
+  background-image: -moz-linear-gradient(top, #81221C 0%, #800000 100%);
+  background-image: linear-gradient(to bottom, #81221C 0%, #800000 100%);
   background-repeat: repeat-x;
-  border-color: #2d6ca2;
+  border-color: #800000;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff428bca', endColorstr='#ff3071a9', GradientType=0);
 }
 
 .btn-primary:active,
 .btn-primary.active {
-  background-color: #3071a9;
-  border-color: #2d6ca2;
+  background-color: #800000;
+  border-color: #800000;
 }
 
 .btn-success {
@@ -249,10 +249,10 @@
 }
 
 .progress-bar {
-  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#81221C), to(#3071a9));
-  background-image: -webkit-linear-gradient(top, #81221C, 0%, #3071a9, 100%);
-  background-image: -moz-linear-gradient(top, #81221C 0%, #3071a9 100%);
-  background-image: linear-gradient(to bottom, #81221C 0%, #3071a9 100%);
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#81221C), to(#800000));
+  background-image: -webkit-linear-gradient(top, #81221C, 0%, #800000, 100%);
+  background-image: -moz-linear-gradient(top, #81221C 0%, #800000 100%);
+  background-image: linear-gradient(to bottom, #81221C 0%, #800000 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff428bca', endColorstr='#ff3071a9', GradientType=0);
 }
@@ -302,7 +302,7 @@
 .list-group-item.active,
 .list-group-item.active:hover,
 .list-group-item.active:focus {
-  text-shadow: 0 -1px 0 #3071a9;
+  text-shadow: 0 -1px 0 #800000;
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#81221C), to(#3278b3));
   background-image: -webkit-linear-gradient(top, #81221C, 0%, #3278b3, 100%);
   background-image: -moz-linear-gradient(top, #81221C 0%, #3278b3 100%);

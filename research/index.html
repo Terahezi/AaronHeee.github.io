@@ -28,26 +28,28 @@ description: Research
     <table>
         <tr>
             <td>
-                <a class="title" href="https://github.com/AaronHeee/Neural-Attentive-Item-Similarity-Model"><b>Check-out Recognition</b></a><br/> A neural network model with attention mechanism
-                for item-based Collaborative Filtering Model. This model has outperformed the art-of-the-state results. That's
-                a research project in LMS Lab, led by <a href="http://www.comp.nus.edu.sg/~xiangnan/">Dr. Xiangnan He</a>.
-                This work has been published on TKDE 2018. <br/> 
-                <small><u><a href="https://www.comp.nus.edu.sg/~xiangnan/papers/tkde18-neural-attentive-itemCF.pdf">[PDF]</a></u>, <u><a href="https://github.com/AaronHeee/Neural-Attentive-Item-Similarity-Model">[CODE]</a></u></small>
+                <a class="title" ><b>Check-out Recognition</b></a><br/> This work is done during my internship at Sunmi AI Lab. The primary development environment is using Docker container on a Ubuntu 16.04 machine <br/> 
+                <li>Developed an interactive, extendable video parser for parsing, selecting and cropping frames</li>
+                <li>Applied VGGNet, Resnet, MobileNet, Densenet for coarse check-out classification on selected, cropped frames in Pytorch</li>
+                <li>Applied YOLO, RefineDet for fine key-object detection, combined Resnet50 and RefineDet512 into a two-stage model in Pytorch</li>
+                <li>Implemented label smothing, focal loss, learning rate warmup + cosine schedule, Ranger optimizer, improved frame-wise accuracy by 10.5%</li>
+                <li>Applied distributed data parallel and mixed precision training on Nvidia Titan RTX P2 GPU, improved training speed by 500%, reduced model size by 33% compared with single GPU, data parallel setting</li>
+                <li>Applied Grad-CAM, Guided-Grad-CAM for visualizion and explanation in Pytorch</li>
             </td>
-            <td><img class="side" src="resource/1.png" width="120px" height="120px"> </td>
         </tr>
     </table>
 </div>
+
 <div class="cell">
     <table>
         <tr>
             <td>
-                <a class="title" href="https://github.com/hexiangnan/adversarial_personalized_ranking"><b>SLAM</b></a><br/> A new optimization framework, namely Adversarial Personalized
-                Ranking (APR), which add adversarial noise when training, to enhance the robustness of a recommender model
-                and thus improve its generalization performance. That's a research project in LMS Lab, led by <a href="http://www.comp.nus.edu.sg/~xiangnan/">Dr.
-                    Xiangnan He.</a>
-                    This work has been published on SIGIR 2018.   <br/> 
-                    <small><u><a href="https://github.com/hexiangnan/adversarial_personalized_ranking">[PDF]</a></u>, <u><a href="https://github.com/hexiangnan/adversarial_personalized_ranking">[CODE]</a></u></small>
+                <a class="title" href="https://github.com/hexiangnan/adversarial_personalized_ranking"><b>SLAM</b></a><br/> 
+                SLAM is short for simultaneous localization and mapping<br/> 
+                <li>Processed and analyzed data accumulated from Encoder, IMU, Hokuyo LIDAR, RGBD camera and stereo camera at nearly 5000 timestamps from a differential drive robot in Numpy.</li>
+                <li>Implemented localization prediction, localization update and (occupancy grid/texture) mapping using a Particle Filter with resampling based on a differential drive motion model and a RGBD camera/Hokuyo LIDAR observation model.</li>
+                <li>Implemented localization prediction, localization and landmark update using an Extended Kalman Filter based on an IMU kinematics motion model and a stereo camera observation model.</li>
+                    <small><u><a href="https://github.com/Terahezi/research_topic_2/blob/master/276%20report.pdf">[PDF]</a></u>, <u><a href="https://github.com/Terahezi/research_topic_2">[CODE]</a></u></small>
                 </td>
             <td><img class="side" src="resource/2.png" width="120px"> </td>
         </tr>

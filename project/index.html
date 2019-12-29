@@ -63,20 +63,23 @@ description: Project
 <h3>COMPUTER VISION</h3>
 <p class="cell">
 <a class='title'><b>Pattern Recognition of Images</b></a><br/>
-    Explore some segmentation models for satellite imagery feature detection such as u-net. Fine tune basic models and explore the best size for satellite imagery.
-    I maintain this project for <a href="http://www.citorytech.com/">Citory Ltd.</a> as an intern, but for some commerce reasons, details cannot be provided.
-    This project is supervised by <a href="zhangfan@citorytech.com">Dr. Fan Zhang</a>. <br/>
+    This is a class project for differentiating foregroud and background of a cheetah image<br/>
+        <li>Applied Maximum Likelihood Estimation for multivariate Gaussian and performed feature selection using Bhattacharyya coefficient.</li>
+        <li>Applied Bayesian Estimation for Gaussian likelihood and Gaussian prior using different prior knowledge.</li>
+        <li>Applied Expectation Maximization algorithm based on Gaussian mixture models with various number of mixtures and different dimension of features.</li>
+        <small><u><a href="https://github.com/Terahezi/Pattern-Recognition-of-Images">[CODE]</a></u></small>
 </p>
 
 <div class="cell">
         <table>
             <tr>
                 <td>
-    <a class='title' href="https://github.com/AaronHeee/FDU-3D-Free-Form-Deformation"><b>3D Free Form Deformation (In Chinese)</b></a><br/>
-        Apply the algorithm about <a href="https://web.cs.wpi.edu/~matt/courses/cs563/talks/smartin/ffdeform.html">3D Free Form Deformation (FFD)</a> with the toolkit<a href="https://www.vtk.org/"> VTK</a>.
-        Plus, utilizing the 3D Face Resruction model <a href="https://github.com/YadiraF/PRNet">PRNet</a>, we realize the workflow of 2D-Face -> 3D-Face -> 3D-FFD. It's a course project about
-        visualization, working with <a href="https://rshcaroline.github.io/">Shihan Ran</a> and <a href="https://github.com/Wang-Yikai">Yikai Wang</a>.
-        The report in Chinese is <a href="resource/ffd.pdf">here</a>.
+    <a class='title'><b>Pet Adoption Speed Prediction</b></a><br/>
+        This is a Kaggle competition.
+                        <li>Text feature extraction: Used Google Natural Language API to acquire sentiment features. Built a TF-IDF weighted bag of words model. Used pre-trained word embedding vectors from ‘fasttext’.</li>
+                        <li>Image feature extraction: Used Cascade Object Detector to select pet body of images and then fine-tuned Alexnet, VGG16 and Densenet to extract image features.</li>
+                        <li>Classification: Implemented Extreme Gradient Boosting (XGB) and Light Gradient Boosting Machine (LightGBM) for classification of the combined features for more than 150k entities.</li>
+                        <small><u><a href="https://github.com/Terahezi/XXX-classifier/blob/master/Group3.pdf">[PDF]</a></u></small>
     </td>
     <td><img class="side" src="resource/FFD.png" width="120px"> </td>
     </tr>
@@ -89,31 +92,12 @@ description: Project
     <table>
         <tr>
             <td>
-<a class='title' href="https://github.com/AaronHeee/FDU-Introduction-to-Artificial-Intelligence"><b>Intelligent Agent: Pac Man Search</b></a><br/>
-    Adapted from the Berkeley Pac-Man Assignments originally created by John DeNero and Dan Klein.
-    This is an AI course project to implement an agent to undertake specifical tasks, as well as to find the path to the end in mazes.
-    What we do are: 1) implement path-search algorithms for DFS, BFS, UCS as well as A*, and 2) design effective heuristics.
-    The report is <a href="resource/pacman.pdf">here.</a>
+<a class='title'><b>Sequence Tagging & Named Entity Recognition</b></a><br/>
+    <li>Preprocessed training set, built N-gram language model, extract transition and emission parameters of Hidden Markov Model (HMM), applied Viterbi algorithm to extract the optimal tag sequence.</li>
+    <li>Applied Maximum Entropy Markov Model (MEMM) to build a log-linear tagger, designed features manually, used Viterbi algorithm to extract the optimal sequence.</li>
+    <li>Applied Bi-Long-Short Term Memory (Bi-LSTM) with Conditional Random Field (CRF).</li>
 </td>
-<td><img class="side" src="resource/pacman1.gif" width="150px"> <img class="side" src="resource/pacman2.gif" width="150px"> </td>
-</tr>
-</table>
-</div>
-
-
-<h3>Robotics</h3>
-
-<div class="cell">
-    <table>
-        <tr>
-            <td>
-<a class='title' href="https://github.com/AaronHeee/FDU-Introduction-to-Artificial-Intelligence"><b>Intelligent Agent: Pac Man Search</b></a><br/>
-    Adapted from the Berkeley Pac-Man Assignments originally created by John DeNero and Dan Klein.
-    This is an AI course project to implement an agent to undertake specifical tasks, as well as to find the path to the end in mazes.
-    What we do are: 1) implement path-search algorithms for DFS, BFS, UCS as well as A*, and 2) design effective heuristics.
-    The report is <a href="resource/pacman.pdf">here.</a>
-</td>
-<td><img class="side" src="resource/pacman1.gif" width="150px"> <img class="side" src="resource/pacman2.gif" width="150px"> </td>
+<td><img class="side" src="resource/bi.png" width="150px">  </td>
 </tr>
 </table>
 </div>

@@ -13,20 +13,6 @@ description: Research
     <table>
         <tr>
             <td>
-                <a class="title" ><b>Visual Question Answering & Image Captioning</b></a><br/> Reimplemented VQA 2017 & 18 champion's work, improved their performance via modifications <br/>
-                <li>Implemented a baseline with simple CNN and RNN for feature extraction, element-wise summation for fusion and fully-connected neural networks for classification.</li>
-                <li>Implemented VQA 2017 champion.
-                <small><u><a href="">[PDF]</a></u>, <u><a href="">[CODE] is coming soon.</a></u></small> <br/> 
-            </td>
-            <td><img class="side" src="resource/5.png" width="160px" height="120px"></td>
-        </tr>
-    </table>
-</div>
-
-<div class="cell">
-    <table>
-        <tr>
-            <td>
                 <a class="title" ><b>Check-out Recognition</b></a><br/> This work is done during my internship at Sunmi AI Lab. The primary development environment is using Docker container on a Ubuntu 16.04 machine <br/> 
                 <li>Developed an interactive, extendable video parser for parsing, selecting and cropping frames</li>
                 <li>Applied VGGNet, Resnet, MobileNet, Densenet for coarse check-out classification on selected, cropped frames in Pytorch</li>
@@ -70,4 +56,21 @@ description: Research
 <td><img class="side" src="resource/4.png" width="120px" height="120px"> <img class="side" src="resource/3.png" width="120px" height="120px"></td>
 </tr>
 </table>
+</div>
+
+
+<div class="cell">
+    <table>
+        <tr>
+            <td>
+                <a class="title" ><b>Visual Question Answering & Image Captioning</b></a><br/> Reimplemented VQA 2017 & 18 champion's work <br/>
+                <li>Implemented a baseline with simple CNN and RNN for feature extraction, element-wise summation for fusion and fully-connected neural networks for classification.</li>
+                <li>Image captioning: Used faster-RCNN to extract bottom-up attention, used LSTM to extract top-down attention and generate output words.</li>
+                <li>VQA: Used faster-RCNN to extract bottom-up attention, used GRU to encode word embeddings of questions and generate top-down attention weights, applied multi-modal fusion and computed predicted scores.</li>
+                <li>VQA: Used ReLU after weight normalization instead of tanh for activation, replaced feature concatenation with element-wise multiplication, fine-tuned bottom-up attention, used Adamax optimizer.</li>
+                <small><u><a href="https://github.com/Terahezi/Visual-Question-Answering/blob/master/report.pdf">[PDF]</a></u>, <u><a href="https://github.com/Terahezi/Visual-Question-Answering">[CODE]</a></u></small> <br/> 
+            </td>
+            <td><img class="side" src="resource/5.png" width="160px" height="120px"></td>
+        </tr>
+    </table>
 </div>

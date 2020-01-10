@@ -8,18 +8,17 @@ life: passive
 blog: passive
 description: Research
 ---
-
 <div class="cell">
     <table>
         <tr>
             <td>
-                <a class="title" ><b>Check-out Recognition</b></a><br/> This work is done during my internship at Sunmi AI Lab. The primary development environment is using Docker container on a Ubuntu 16.04 machine <br/> 
+                <a class="title" ><b>Check-out Recognition</b></a><br/> This work is done during my internship at Sunmi AI Lab. The primary development environment is using Docker container on a Ubuntu 16.04 machine. The framework used is mainly Pytorch. <br/> 
                 <li>Developed an interactive, extendable video parser for parsing, selecting and cropping frames</li>
-                <li>Applied VGGNet, Resnet, MobileNet, Densenet for coarse check-out classification on selected, cropped frames in Pytorch</li>
-                <li>Applied YOLO, RefineDet for fine key-object detection, combined Resnet50 and RefineDet512 into a two-stage model in Pytorch</li>
+                <li>Applied VGGNet, Resnet, MobileNet, Densenet for coarse check-out classification on selected, cropped frames</li>
+                <li>Applied YOLO, RefineDet for fine key-object detection, combined Resnet50 and RefineDet512 into a two-stage model</li>
                 <li>Implemented label smothing, focal loss, learning rate warmup + cosine schedule, Ranger optimizer, improved frame-wise accuracy by 10.5%</li>
                 <li>Applied distributed data parallel and mixed precision training on Nvidia Titan RTX P2 GPU, improved training speed by 500%, reduced model size by 33% compared with single GPU, data parallel, full precision setting</li>
-                <li>Applied Grad-CAM, Guided-Grad-CAM for visualizion and explanation in Pytorch</li>
+                <li>Applied Grad-CAM, Guided-Grad-CAM for visualizion and explanation</li>
             </td>
         </tr>
     </table>
@@ -34,7 +33,7 @@ description: Research
                 <li>Implemented a baseline with simple CNN and RNN for feature extraction, element-wise summation for fusion and fully-connected neural networks for classification.</li>
                 <li>Image captioning: Used faster-RCNN to extract bottom-up attention, used LSTM to extract top-down attention and generate output words.</li>
                 <li>VQA17: Used faster-RCNN to extract bottom-up attention, used GRU to encode word embeddings of questions and generate top-down attention weights, applied multi-modal fusion and computed predicted scores.</li>
-                <li>VQA18: Used ReLU after weight normalization instead of tanh for activation, replaced feature concatenation with element-wise multiplication, fine-tuned bottom-up attention, used Adamax optimizer.</li>
+                <li>VQA18: Used ReLU after weight normalization instead of tanh for activation, replaced feature concatenation with element-wise multiplication, fine-tuned bottom-up attention, used Adamax for optimization.</li>
                 <small><u><a href="https://github.com/Terahezi/Visual-Question-Answering/blob/master/report.pdf">[PDF]</a></u>, <u><a href="https://github.com/Terahezi/Visual-Question-Answering">[CODE]</a></u></small> <br/> 
             </td>
             <td><img class="side" src="resource/5.png" width="160px" height="120px"></td>

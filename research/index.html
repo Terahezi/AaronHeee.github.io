@@ -34,6 +34,7 @@ description: Research
                 <li>Image captioning: Used faster-RCNN to extract bottom-up attention, used LSTM to extract top-down attention and generate output words.</li>
                 <li>VQA17: Used faster-RCNN to extract bottom-up attention, used GRU to encode word embeddings of questions and generate top-down attention weights, applied multi-modal fusion and computed predicted scores.</li>
                 <li>VQA18: Used ReLU after weight normalization instead of tanh for activation, replaced feature concatenation with element-wise multiplication, fine-tuned bottom-up attention, used Adamax for optimization.</li>
+                <li>Applied dropout & gradient clipping, increased the number of hidden units in the network, applied projection-based attention, experimented with different types of fusion methods: block-based, concatenated MLP, MCB, MUTAN, MFH.</li>
                 <small><u><a href="https://github.com/Terahezi/Visual-Question-Answering/blob/master/report.pdf">[PDF]</a></u>, <u><a href="https://github.com/Terahezi/Visual-Question-Answering">[CODE]</a></u></small> <br/> 
             </td>
             <td><img class="side" src="resource/5.png" width="160px" height="120px"></td>

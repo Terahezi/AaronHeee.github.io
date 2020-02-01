@@ -1,0 +1,136 @@
+---
+layout: default
+title: Project | Zi He
+home: passive
+research: passive
+project: active
+life: passive
+blog: passive
+description: Project
+---
+
+
+<h3>Distributed System and Network</h3>
+<div class="cell">
+        <table>
+            <tr>
+                <td>
+<a class='title'><b>TritonHTTP</b></a><br/>
+                        This work is to build a webserver that implements a subset of the HTTP/1.1 protocol which we call it TritonHTTP. The code is in C++.
+                        <li>Implemented a client and a server based on a stream-oriented TCP protocol.</li>
+                        <li>Appended features like reusing TCP connection for request and reply, using HTTP format as request and response message, allowing for pipelined requests.</li>
+                        <li>Implemented error codes and custom error page to deal with various types of errors.</li>
+                        <small><u><a href="https://github.com/ucsd-cse224-fa19/proj1-cse224-hf">[CODE]</a></u></small>
+</td>
+</tr>
+</table>
+</div>
+
+
+<div class="cell">
+        <table>
+            <tr>
+                <td>
+                    <a class="title" href=""><b>Distributed & Fault-tolerant SurfStore</b></a><br/> 
+                    A cloud-based file storage system patterned on Dropbox that can survice server failure, datacenter failure and network failures. Written in Python<br/> 
+                    <li>Implemented a BlockStore service: divided content of files into chunks/blocks, used SHA-256 to get a unique identifier, stored identifier and block as key-value pairs, implemented get/put operations.</li>
+                    <li>Implemented a MetadataStore service: stored filenames and version number & hashlists as key-value pairs, implemented get/update operations.</li>
+                    <li>Implemented client part to sync new/missing files to/from cloud, sync locally/remotely updated files to/from cloud, handle concurrent modification from multiple clients.</li>
+                    <li>Modified MetadataStore service to be fault tolerent based on RAFT protocol.</li>
+                    <small><u><a href="https://github.com/ucsd-cse224-fa19/proj3-python-cse224-proj2-sx">[CODE]</a></u></small>
+</td>
+<td><img class="side" src="resource/4.png" width="120px" height="120px"> <img class="side" src="resource/3.png" width="120px" height="120px"></td>
+</tr>
+</table>
+</div>
+
+<h3>Natural Language Processing</h3>
+<div class="cell">
+    <table>
+        <tr>
+            <td>
+<a class='title'><b>Text Classification & Sentiment Analysis of a reviews dataset</b></a><br/>
+    <li>Designed features (bag-of-words, N-gram), Applied Logistic Regression model, used TF-IDF weighting, used model parameters for explanation.</li>
+    <li>Applied Naive Bayes Model for sentiment analysis.</li>
+    <li>Applied Support Vector Machine for sentiment analysis.</li>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="cell">
+    <table>
+        <tr>
+            <td>
+<a class='title'><b>Sequence Tagging & Named Entity Recognition</b></a><br/>
+    <li>Preprocessed training set, built N-gram language model, extract transition and emission parameters of Hidden Markov Model (HMM), applied Viterbi algorithm to extract the optimal tag sequence.</li>
+    <li>Applied Maximum Entropy Markov Model (MEMM) to build a log-linear tagger, designed features manually, used Viterbi algorithm to extract the optimal sequence.</li>
+    <li>Applied Bi-Long-Short Term Memory (Bi-LSTM) with Conditional Random Field (CRF).</li>
+</td>
+<td><img class="side" src="resource/bi.png" width="150px">  </td>
+</tr>
+</table>
+</div>
+
+<div class="cell">
+    <table>
+        <tr>
+            <td>
+<a class='title'><b>Machine Translation</b></a><br/>
+    <li>Implemented and compared the performance of IBM Model 1 and Model 2 on a French-English dataset from European Parliament </li>
+    <li>Implemented Transformer-based sequence-to-sequence model.</li>
+</td>
+</tr>
+</table>
+</div>
+
+
+<h3>COMPUTER VISION</h3>
+<div class="cell">
+        <table>
+            <tr>
+                <td>
+<a class='title'><b>Pattern Recognition of Images</b></a><br/>
+    This is a class project for differentiating foregroud and background of a cheetah image<br/>
+        <li>Applied Maximum Likelihood Estimation for multivariate Gaussian and performed feature selection using Bhattacharyya coefficient.</li>
+        <li>Applied Bayesian Estimation for Gaussian likelihood and Gaussian prior using different prior knowledge.</li>
+        <li>Applied Expectation Maximization algorithm based on Gaussian mixture models with various number of mixtures and different dimension of features.</li>
+        <small><u><a href="https://github.com/Terahezi/Pattern-Recognition-of-Images">[CODE]</a></u></small>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="cell">
+        <table>
+            <tr>
+                <td>
+    <a class='title'><b>Pet Adoption Speed Prediction</b></a><br/>
+        This is a Kaggle competition.
+                        <li>Text feature extraction: Used Google Natural Language API to acquire sentiment features. Built a TF-IDF weighted bag of words model. Used pre-trained word embedding vectors from ‘fasttext’.</li>
+                        <li>Image feature extraction: Used Cascade Object Detector to select pet body of images and then fine-tuned Alexnet, VGG16 and Densenet to extract image features.</li>
+                        <li>Classification: Implemented Extreme Gradient Boosting (XGB) and Light Gradient Boosting Machine (LightGBM) for classification of the combined features for more than 150k entities.</li>
+                        <small><u><a href="https://github.com/Terahezi/XXX-classifier/blob/master/Group3.pdf">[PDF]</a></u></small>
+    </td>
+    <td><img class="side" src="resource/FFD.png" width="120px"> </td>
+    </tr>
+    </table>
+    </div>
+
+
+<h3>Robotics</h3>
+<div class="cell">
+    <table>
+        <tr>
+            <td>
+                <a class="title"><b>SLAM</b></a><br/> 
+                SLAM is short for simultaneous localization and mapping<br/> 
+                <li>Processed and analyzed data accumulated from Encoder, IMU, Hokuyo LIDAR, RGBD camera and stereo camera at nearly 5000 timestamps from a differential drive robot in Numpy.</li>
+                <li>Implemented localization prediction, localization update and (occupancy grid/texture) mapping using a Particle Filter with resampling based on a differential drive motion model and a RGBD camera/Hokuyo LIDAR observation model.</li>
+                <li>Implemented localization prediction, localization and landmark update using an Extended Kalman Filter based on an IMU kinematics motion model and a stereo camera observation model.</li>
+                    <small><u><a href="https://github.com/Terahezi/research_topic_2/blob/master/276%20report.pdf">[PDF]</a></u>, <u><a href="https://github.com/Terahezi/research_topic_2">[CODE]</a></u></small>
+                </td>
+            <td><img class="side" src="resource/1.gif" width="120px"> <img class="side" src="resource/2.gif" width="120px"></td>
+        </tr>
+    </table>
+</div>

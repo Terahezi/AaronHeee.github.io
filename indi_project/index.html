@@ -14,14 +14,13 @@ description: Project
         <table>
             <tr>
                 <td>
-<a class='title'><b>General & Sequential Recommender</b></a><br/>
-                        This is a class project where I explore basic algorithms in RS.
-                        <li>Implemented Bayesian Personalized Ranking algorithm on a books reading dataset.</li>
-                        <li>Implemented Latent Factor Model algorithm on a books rating dataset.</li>
-                        <li>Implemented Factorized Personalized Markoc Chain on a Steam reviews dataset for sequential recommendation.</li>
-                        <li>Implemented Translation-based Recommender on a Steam reviews dataset for sequential recommendation.</li>
-                        <li>Implemented Self-attentive Deep Neural Networks using ideas from Transformer on Steam reviews, Amazon Beauty/Games, MovieLens dataset for sequential recommendation.</li>
-                        <small><u><a href="https://github.com/Terahezi/CSE258-Assignment2/blob/master/258_Assignment_2.pdf">[PDF(part)]</a></u>, <u><a href="https://github.com/Terahezi/CSE258-Assignment2">[CODE(part)]</a></u></small>
+<a class='title'><b>Online Movie Recommender System</b></a><br/>
+This is an independent project. Written in Python, Tensorflow.
+                        <li>Preprocessed raw data into Spark Dataset by implementing MapReduce operations on MovieLens dataset.</li>
+                        <li>Retrieval: Built candidate generators by implementing content-based filtering and collaborative filtering via Matrix Factorization using SparkMLib, visualized item / query embedding by using PCA, experimented with different similarity measures and regularization methods.</li>
+                        <li>Ranking: Ranked candidates by implementing a softmax deep neural network with negative sampling, incorporated side features to the ranking model.</li>
+                        <li>Re-ranking: Experimented with factors to be concerned for re-ranking, e.g. warm-start, multi-task learning, fairness etc.</li>
+                        <li>Built a web application by defining a RESTful-like API using Flask, built a HTTP/1.1-compliant, WSGI thread-pooled web server on a Spark cluster using CherryPy.</li>
 </td>
 </tr>
 </table>

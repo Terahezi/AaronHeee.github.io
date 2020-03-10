@@ -14,11 +14,12 @@ description: Research
     <table>
         <tr>
             <td>
-                <a class="title" ><b>Sequential Recommendation</b></a><br/> This is a research I have currently been doing on Recommender System. Evaluated on Hit@k, NDCG@k, AUC. Written in Python, Tensorflow. <br/> 
-                <li>Implemented Factorized Personalized Markov Chain and Translation-based Recommender on a Steam reviews dataset for sequential recommendation, compared with baseline model: Bayesian Personalized Ranking.</li>
-                <li>Implemented Self-attentive Deep Neural Networks using ideas from Transformer on Steam reviews, Amazon Beauty/Games, MovieLens dataset for sequential recommendation.</li>
-                <li>Introduce hidden variable to capture heterogeneous relationships among items, introduce multi-task learning for training.</li>
-                <li>Introduce knowledge graph based context to item embeddings to capture item relations under sequential setting.</li>
+                <a class="title" ><b>Sequential Recommendation using both Self-attention & Knowledge Graph</b></a><br/> This is a research I have currently been doing on Recommender System. Evaluated on Steam reviews, Amazon Beauty/Games, MovieLens dataset using metrics like Hit@k, NDCG@k, AUC. Written in Python, Pytorch. <br/> 
+                <li>Implemented Translation-based Recommender using Numpy, compared with baseline model: Bayesian Personalized Ranking.</li>
+                <li>Implemented Self-attentive Deep Neural Networks (sasRec) using ideas from Transformer, achieved state-of-the-art performance.</li>
+                <li>Introduced hidden variable to sasRec to capture heterogeneous relationships among items.</li>
+                <li>Generated knowledge graph (KG) embeddings using KB4REC, implemented graph convolutional network for learning structural proximity among entities in KG and sequential recommendation.</li>
+                <li>Implement Tranformer as graph convolution network for learning structural proximity and long-term dependency in one network (undergoing).</li>
             </td>
         </tr>
     </table>
@@ -29,11 +30,10 @@ description: Research
     <table>
         <tr>
             <td>
-                <a class="title" ><b>Visual Question Answering & Image Captioning</b></a><br/> Reimplemented and Improved VQA 2017 & 18 champion's work. Written in Pytorch <br/>
-                <li>Implemented a baseline with simple CNN and RNN for feature extraction, element-wise summation for fusion and fully-connected neural networks for classification.</li>
-                <li>Image captioning: Implemented pre-trained ResNet50 as encoder and LSTM as decoder.</li>
-                <li>VQA17: Implemented faster-RCNN to extract bottom-up attention, implemented GRU to generate top-down attention weights.</li>
-                <li>Improvements: Experimented with pre-trained word embeddings: Word2Vec, Fastext and GloVe. Fine-tuned bottom-up attention, used Adamax for optimization, applied dropout & gradient clipping, experimented with fusion methods.</li>
+                <a class="title" ><b>Visual Question Answering & Image Captioning</b></a><br/> Reimplemented and Improved VQA 2017 & 18 champion's work. Evaluated on BLEU1 & BLEU4 score. Written in Pytorch <br/>
+                <li>Image captioning: Implemented pre-trained ResNet50 as encoder and LSTM as decoder, used teacher forcing for training, experiemnted with generation techniques: deterministic, stochastic, beam search</li>
+                <li>VQA17: Implemented faster-RCNN to extract bottom-up attention, implemented GRU to generate top-down attention weights, used stochastic teacher forcing for training.</li>
+                <li>Improvements: Experimented with pre-trained word embeddings: Word2Vec, Fastext and GloVe. Fine-tuned bottom-up attention, used Adamax for optimization, applied dropout & gradient clipping, experimented with different fusion methods.</li>
                 <small><u><a href="https://github.com/Terahezi/Visual-Question-Answering/blob/master/report.pdf">[PDF]</a></u>, <u><a href="https://github.com/Terahezi/Visual-Question-Answering">[CODE]</a></u></small> <br/> 
             </td>
             <td><img class="side" src="resource/5.png" width="160px" height="120px"></td>
